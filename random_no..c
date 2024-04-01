@@ -18,13 +18,17 @@ int main()
                 printf("Congrats,you've guessed the no!!!");
                 break;
             }
-        else if(abs(random_no-guess<=5))
+        else if(abs(random_no-guess)<=5)//abs is used to get the absolute value so as to avoid getting negative values while comparing
             {
-                printf("You're getting warmer to the guess\n");
+                printf("You're getting warmer to the no\n");
             }
-        else
+        else if(abs(random_no-guess)<=10)
             {
-                printf("You're getting colder to the guess\n");
+                printf("You're getting colder to the no\n");
+            }
+        else 
+            {
+                printf("you are way colder  to the no\n");
             }
     }while(1);
     return 0;
