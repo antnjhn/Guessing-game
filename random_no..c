@@ -4,15 +4,18 @@
 #include<time.h>
 int main()
 {   
-    int n,random_no,guess;
+    int n,random_no,guess,i,x;
     printf("Enter how many guessing nos should be there:");
     scanf("%d",&n);
     srand(time(NULL));//the time library is used in order to make the randomised no truly random as time changes constantly 
     random_no=rand()%n;
-    do
-    {
+    printf("Enter limits:");
+    scanf("%d",&x);
+    for(i=0;i<=x;i++)
+        {
         printf("Enter the no :");
         scanf("%d",&guess);
+    
         if(random_no==guess)
             {
                 printf("Congrats,you've guessed the no!!!");
@@ -28,9 +31,11 @@ int main()
             }
         else 
             {
-                printf("you are way colder  to the no\n");
+            printf("you are way colder  to the no\n");
             }
-    }while(1);
-    return 0;
+        }
+    
+    
+    
 }
 
