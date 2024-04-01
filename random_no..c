@@ -9,6 +9,7 @@ int main()
     scanf("%d",&n);
     srand(time(NULL));//the time library is used in order to make the randomised no truly random as time changes constantly 
     random_no=rand()%n;
+    printf("The no's are in between 0 and %d",n);
     do
     {
         printf("Enter the no :");
