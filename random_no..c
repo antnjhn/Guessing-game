@@ -26,6 +26,10 @@ int main()
             {
                 printf("You're getting colder to the no\n");
             }
+        else if(abs(random_no-guess)<=3)
+            {
+                printf("You're really close to the no\n")
+            }
         else 
             {
                 printf("you are way colder  to the no\n");
