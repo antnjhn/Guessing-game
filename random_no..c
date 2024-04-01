@@ -28,7 +28,7 @@ int main()
             }
         else if(abs(random_no-guess)<=3)
             {
-                printf("You're really close to the no\n")
+                printf("You're really close to the no\n");
             }
         else 
             {
