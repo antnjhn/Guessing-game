@@ -5,6 +5,10 @@
 int main()
 {   
     int n,random_no,guess,i,x;
+    printf("  _______  ___________________  _______  ________   __  _______\n");
+    printf(" / ___/ / / / __/ __/ __/  _/ |/ / ___/ / ___/ _ | /  |/  / __/\n");
+    printf("/ (_ / /_/ / _/_\\ \\_/ \\_/ //    / (_ / / (_ / __ |/ /|_/ / _/  \n");
+    printf("\\___/\\____/___/___/___/___/_/|_/\\___/  \\___/_/ |_|_/  /_/___/  \n");
     printf("Enter how many guessing nos should be there:");
     scanf("%d",&n);
     srand(time(NULL));//the time library is used in order to make the randomised no truly random as time changes constantly 
